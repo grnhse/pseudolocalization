@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "10:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - ChristianBlais
+  - larouxn
+  labels:
+  - Gem upgrades
+  ignore:
+  - dependency-name: minitest
+    versions:
+    - 5.14.3
